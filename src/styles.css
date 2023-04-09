@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import 'swiper/swiper-bundle.min.css';
+@import 'swiper/swiper.min.css';
+@import 'swiper/swiper-bundle.css';
 
 * {
   box-sizing: border-box;
@@ -12,4 +15,8 @@ html {
 }
 html, body{
   max-width: 100%;
+}
+
+:root{
+  --swiper-theme-color: #7721bf;
 }

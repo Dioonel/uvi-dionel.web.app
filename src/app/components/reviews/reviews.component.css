@@ -1,0 +1,111 @@
+.review-title {
+  margin-top: 60px;
+  font-family: 'Inter';
+  font-size: 4em;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0% 10%;
+}
+
+.review-subtitle {
+  font-family: 'Inter';
+  font-size: 1.8em;
+  color: grey;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0% 10%;
+}
+
+.swiper-container{
+  margin-top: 40px;
+  padding: 0% 15%;
+}
+
+.swiper-container .mySwiper{
+  padding-bottom: 40px;
+}
+
+.swiper-container .mySwiper .card {
+  border-radius: 10px;
+  border: 2px solid #bd72fd;
+  background-color: #bc72fd33;
+}
+
+.swiper-container .mySwiper .card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.swiper-container .mySwiper .card .content .pic {
+  width: 110px;
+  height: 110px;
+  margin: 8px 0px 4px 0px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white !important;
+}
+
+.swiper-container .mySwiper .card .content .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container .mySwiper .comment .description {
+  font-family: 'Inter';
+  font-size: 1.5em;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.swiper-container .mySwiper hr {
+  background-color: rgb(117, 117, 117);
+  width: 80%;
+}
+
+.swiper-container .mySwiper .card-bottoms {
+  text-align: center;
+  padding: 0px 20px 20px 20px;
+}
+
+.swiper-container .mySwiper .card-bottoms .username {
+  font-family: 'Inter';
+  font-size: 2.2em;
+  color: #7721bf;
+  margin-bottom: 15px;
+}
+
+.swiper-container .mySwiper .card-bottoms .rating fa-icon {
+  color: #7721bf;
+  margin: 1px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1360px) {
+  .swiper-container {
+    padding: 0% 10%;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1199px) {
+  .swiper-container {
+    padding: 0% 3%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 949px) {
+  .swiper-container {
+    padding: 0% 5%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .swiper-container {
+    padding: 0% 8%;
+  }
+}
