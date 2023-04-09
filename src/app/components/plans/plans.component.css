@@ -1,0 +1,191 @@
+.pricing-title {
+  margin-top: 70px;
+  font-family: 'Inter';
+  font-size: 4em;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0% 10%;
+}
+
+.pricing-subtitle {
+  font-family: 'Inter';
+  font-size: 1.8em;
+  color: grey;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0% 10%;
+}
+
+
+#price {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.plan {
+  display: inline-block;
+  margin: 10px 1%;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.plan-inner {
+  background: #fff;
+  margin: 0 auto;
+  min-width: 360px;
+  max-width: 100%;
+  position:relative;
+}
+
+.entry-title {
+  font-family: 'Inter';
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: 140px;
+  margin-bottom: 30px;
+}
+
+.entry-title > h3 {
+  font-size: 2em;
+  padding: 5px 0;
+  font-weight: 700;
+  margin: 0;
+}
+
+.entry-title .price {
+  font-family: 'Inter';
+  font-size: 28px;
+  font-weight: 700;
+  height: 95px;
+  width: 95px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -25px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  line-height: 80px;
+  /* overflow: hidden; */
+}
+
+.price span {
+  font-family: 'Inter';
+  position: absolute;
+  font-size: 0.5em;
+  bottom: -18px;
+  left: 29px;
+  font-weight: 400;
+}
+
+.entry-content {
+  color: #323232;
+}
+
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.entry-content li {
+  font-size: 1.6em;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0;
+}
+
+.entry-content li:last-child {
+  border: none;
+}
+
+.btn {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.btn a {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background: #656565;
+  padding: 10px 30px;
+}
+
+.btn a:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+.hot {
+  font-family: 'Inter';
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  background: #DD4B5E;
+  padding: 3px 6px;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.basic .entry-title {
+  background: #bc72fdaf;
+}
+
+.basic .entry-title > h3 {
+  background: #bd72fd;
+}
+
+.basic .price {
+  background: #bd72fd;
+}
+
+.basic > .plan-inner {
+  border: 1px solid #bc72fd77;
+  border-top: none;
+}
+
+.standard .entry-title {
+  background: #7721bfaf;
+}
+
+.standard .entry-title > h3 {
+  background: #7721bf;
+}
+
+.standard .price {
+  background: #7721bf;
+}
+
+.standard > .plan-inner {
+  border: 1px solid #7721bf77;
+  border-top: none;
+}
+
+.premium .entry-title {
+  background: #470083af;
+}
+
+.premium .entry-title > h3 {
+  background: #470083;
+}
+
+.premium .price {
+  background: #470083;
+}
+
+.premium > .plan-inner {
+  border: 1px solid #47008377;
+  border-top: none;
+}
+
+@media screen and (max-width: 400px) {
+  .plan-inner {
+    min-width: 300px;
+  }
+}
