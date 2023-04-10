@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  scrollIntoView(elem: string) {
+    console.log(elem);
+    let element = document.querySelector(`app-${elem}`);
+    if(element) element.scrollIntoView({block: 'start'});                      // behavior: 'smooth' is bugged at least in opera
+  }
+
 }

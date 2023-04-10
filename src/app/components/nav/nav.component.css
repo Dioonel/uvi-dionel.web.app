@@ -30,13 +30,14 @@
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 18px 20px;
+  padding: 19px 20px;
   text-decoration: none;
   color: #efefef;
 }
 
 .nav > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .nav > #nav-check {
@@ -56,9 +57,6 @@
     height: 60px;
     padding: 18px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -75,6 +73,7 @@
     overflow-y: hidden;
     top: 60px;
     left: 0px;
+    z-index: 999;
   }
   .nav > .nav-links > a {
     display: block;
@@ -86,5 +85,17 @@
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 60px);
     overflow-y: auto;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+  .nav-expanded {
+    min-height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
   }
 }

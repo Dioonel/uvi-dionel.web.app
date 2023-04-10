@@ -1,5 +1,5 @@
 <div class="nav">
-  <input type="checkbox" id="nav-check">
+  <input type="checkbox" id="nav-check" (change)="onNavCheckClick()">
   <div class="nav-header">
     <div class="nav-title">
       <img src="/assets/logo2.png">
@@ -14,9 +14,9 @@
   </div>
 
   <div class="nav-links">
-    <a href="#">Reviews</a>
-    <a href="#">Plans</a>
-    <a href="#">Join</a>
-    <a href="#">About Us</a>
+    <a (click)="onScrollIntoView('reviews')">Reseñas</a>
+    <a (click)="onScrollIntoView('plans')">Servicios</a>
+    <a (click)="onScrollIntoView('form')">Contrata</a>
+    <a (click)="onScrollIntoView('footer')">Acerca de</a>
   </div>
 </div>
