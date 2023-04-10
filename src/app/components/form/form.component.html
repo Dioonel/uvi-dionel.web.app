@@ -1,1 +1,52 @@
-<p>form works!</p>
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <h1>Contratanos ya</h1>
+    <h3>Estamos emocionados por ayudarte a encontrar el talento que necesites.</h3>
+
+    <div class="form-group">
+      <label for="name">Nombre y apellido</label><br/>
+      <input type="text" formControlName="name" class="form-control" id="name" placeholder="e.g. Julian Roca">
+      <p class="error" *ngIf="form.controls['name'].dirty && form.hasError('required', 'name')" id="name-required-error">Este campo es requerido *</p>
+      <p class="error" *ngIf="form.controls['name'].dirty && form.hasError('maxlength', 'name')" id="name-length-error">Nombre demasiado largo *</p>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label><br/>
+      <input type="email" formControlName="email" class="form-control" id="email" placeholder="e.g. micorreo@gmail.com">
+      <p class="error" *ngIf="form.controls['email'].dirty && form.hasError('required', 'email')" id="email-required-error">Este campo es requerido *</p>
+      <p class="error" *ngIf="form.controls['email'].dirty && form.hasError('maxlength', 'email')" id="email-length-error">E-mail demasiado largo *</p>
+      <p class="error" *ngIf="form.controls['email'].dirty && form.hasError('email', 'email')" id="email-pattern-error">E-mail inválido *</p>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telefono</label><br/>
+      <input type="tel" formControlName="phone" class="form-control" id="phone" placeholder="e.g. +5415756932">
+      <p class="error" *ngIf="form.controls['phone'].dirty && form.hasError('required', 'phone')" id="phone-required-error">Este campo es requerido *</p>
+      <p class="error" *ngIf="form.controls['phone'].dirty && form.hasError('maxlength', 'phone')" id="phone-length-error">Telefono demasiado largo *</p>
+      <p class="error" *ngIf="form.controls['phone'].dirty && form.hasError('pattern', 'phone')" id="phone-pattern-error">Telefono inválido *</p>
+    </div>
+
+    <div class="form-group">
+      <label for="file">Archivo adjunto (pdf, docx, txt)</label><br/>
+      <input type="file" accept="text/plain, .pdf, .doc, .docx, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" formControlName="file" class="form-control" id="file">
+      <p class="error" *ngIf="form.controls['file'].dirty && form.hasError('required', 'file')" id="file-required-error">Este campo es requerido *</p>
+    </div>
+
+    <div class="form-group">
+      <label for="service">Servicio</label>
+      <select formControlName="service" class="form-control" id="service">
+        <option value="" disabled selected>...</option>
+        <option value="basic">Basic</option>
+        <option value="standard">Standard</option>
+        <option value="premium">Premium</option>
+      </select>
+      <p class="error" *ngIf="form.controls['service'].dirty && form.hasError('required', 'service')" id="service-required-error">Este campo es requerido *</p>
+    </div>
+
+    <button type="submit" class="submit" (click)="markFormGroupTouched()">Enviar</button>
+  </form>
+  <br/>
+
+  <p class="success" *ngIf="status === 'success'">Form is valid!</p>
+  <p class="error" *ngIf="status === 'error'">{{ errorInfo }}</p>
+</div>
